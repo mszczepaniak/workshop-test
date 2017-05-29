@@ -1,0 +1,26 @@
+<div
+  class="container"
+>
+  <h3 class="selectable">
+    <i class="fa fa-users padme pull-left" aria-hidden="true"></i>
+    Mate Number {{mateNo}}:
+  </h3>
+
+  <div class="row">
+    <div class="col-sm-6">
+      {{mate.name}}
+    </div>
+
+    <div class="col-sm-6">
+      <button
+        type="button"
+        class="btn btn-danger"
+        (click)="select(mate.name, mate.id)"
+      >
+        <i class="fa fa-address-book" aria-hidden="true"></i>
+        Click me
+      </button>
+    </div>
+
+  </div>
+</div>
